@@ -10,17 +10,23 @@ namespace GetVowel
         static void Main(string[] args)
         {
 
-            int sum = 0;
             string input;
-            int vowel;
             while (true)
             {
                 Console.WriteLine("Enter a vowel");
-                input = Console.ReadLine();
+                input = Console.ReadLine().ToLower();
 
                 if (input == "a" || input == "e" || input == "i" || input == "o" || input == "u")
                 {
                     Console.WriteLine("OK");
+                }
+                else
+                {
+                    Console.WriteLine("Not a Vowel");
+                }
+                if (input == "!")
+                {
+                    break;
                 }
             }
         }
